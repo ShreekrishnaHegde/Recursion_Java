@@ -10,6 +10,7 @@ public class Basics {
             return;
         }
         System.out.println(n);
+        //This is called tail recursion since this is the last function call.
         rec(n+1);
     }
 }
@@ -17,5 +18,12 @@ public class Basics {
 ->Space complexity is not constant.
 ->You can convert recursion into iteration and vice versa.
 ->Recursion tree.
+ */
 
+/*
+->Breaking the problem
+->Write the recurrence relation if needed.
+->Draw the recursive tree.
+->About the tree
+->See the flow of functions.
  */

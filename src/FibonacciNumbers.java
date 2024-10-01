@@ -10,6 +10,8 @@ public class FibonacciNumbers {
         //Base Condition
         if(n<2)
             return n;
+        //This is not last function call, hence not tail recursion.
+        //*f(n-1) is going to execute first.
         return fib(n-1)+fib(n-2);
     }
 }
