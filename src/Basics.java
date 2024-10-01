@@ -13,3 +13,9 @@ public class Basics {
         rec(n+1);
     }
 }
+/*
+->Space complexity is not constant.
+->You can convert recursion into iteration and vice versa.
+->Recursion tree.
+
+ */
