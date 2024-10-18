@@ -16,6 +16,8 @@ public class FibonacciNumbers {
     }
 }
 /*
--> Fib(N)=Fib(N-1)+Fib(N-2) is known as recurrence relation.
+-> Fib(N)=Fib(N-1)+Fib(N-2)+O(1) is known as recurrence relation.
 ->Base condition: F(0)=0, F(1)=1.
+->n if n == 0, n == 1;
+    fib(n) = fib(n-1) + fib(n-2) otherwise;
  */
