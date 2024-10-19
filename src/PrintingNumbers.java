@@ -23,9 +23,11 @@ public class PrintingNumbers {
 /*
 ->Base Condition: n=0
 ------display1--------
+->Tail Recursive Function
 ->Print n
 ->Call the recursive function by passing n-1 as argument.
 ------display2--------
+->Non-tail Recursive Function
 ->Call the recursive function by passing n-1 as argument.
 ->Print n.
  */

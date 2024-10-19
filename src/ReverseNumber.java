@@ -1,3 +1,6 @@
+/*
+->Program to reverse a given number and print it.
+ */
 public class ReverseNumber {
     public static void main(String[] args) {
         int n=12345;
@@ -12,6 +15,7 @@ public class ReverseNumber {
     }
 
     static int reverse2(int n){
+        //Given the total number of digits in a number
         int digits=(int)(Math.log10(n))+1;
         return flag(n,digits);
     }
@@ -21,3 +25,10 @@ public class ReverseNumber {
         return (n%10)*(int)(Math.pow(10,digits-1))+flag(n/10,digits-1);
     }
 }
+/*
+NOTE:int digits=(int)(Math.log10(n))+1; gives total number of digits in a number.
+---------reverse1----------
+->Tail Recursive Function
+->Base Condition: n=0
+->Recursive Relation: F(N)=F(N/10)
+ */

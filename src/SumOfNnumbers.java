@@ -14,6 +14,7 @@ public class SumOfNnumbers {
     }
 }
 /*
+->Non-tail recursive function.
 ->Base Condition: n=1
 ->F(n)=n+F(n-1) is the Recursive Relation
  */
