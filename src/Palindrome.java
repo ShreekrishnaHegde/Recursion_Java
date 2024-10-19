@@ -1,6 +1,6 @@
 public class Palindrome {
     public static void main(String[] args) {
-        System.out.println(palindrome(1231));
+        System.out.println(palindrome(1));
     }
     static int sum=0;
     static boolean palindrome(int n){
