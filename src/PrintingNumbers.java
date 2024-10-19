@@ -1,7 +1,7 @@
 public class PrintingNumbers {
     //given n=5, return all the integers starting fom 5 till 1.
     public static void main(String[] args) {
-        display2(5);
+        display1(5);
     }
     static void display1(int n){
         if(n==0)
