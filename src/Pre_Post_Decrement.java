@@ -17,3 +17,9 @@ public class Pre_Post_Decrement {
     }
 
 }
+/*
+n-- vs --n
+Pre and post decrement
+first value of 5 is passed then it subtracts 1 from n.
+suvtract first then pass
+ */
