@@ -1,14 +1,10 @@
-public class ReverseNumber {
+public class Palindrome {
     public static void main(String[] args) {
-        int n=12345;
-        System.out.println(reverse2(n));
+        System.out.println(palindrome(1231));
     }
     static int sum=0;
-    static void reverse1(int n){
-        if(n==0)
-            return;
-        sum=sum*10+n%10;
-        reverse1(n/10);
+    static boolean palindrome(int n){
+        return (n==reverse2(n));
     }
 
     static int reverse2(int n){
