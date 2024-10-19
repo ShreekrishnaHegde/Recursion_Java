@@ -16,5 +16,7 @@ public class CoutingZeroes {
     }
 }
 /*
-->
+->Tail Recursive
+->Base Condition: n%10=0
+->F(N)=F(n/10)
  */

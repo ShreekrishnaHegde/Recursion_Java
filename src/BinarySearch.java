@@ -23,4 +23,5 @@ public class BinarySearch {
     Fib(N)=Fib(N-1)+Fib(N-2)
 ->Divide and cConquer recurrence relation(Binary Search)
     F(N)=O(1)+F(N/2)
+->Tail recursive function.
  */
