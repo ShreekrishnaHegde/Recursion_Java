@@ -1,7 +1,7 @@
 public class SumOfDigits {
     //Sum of the digits of a number.
     public static void main(String[] args) {
-        System.out.println(product(2134));
+        System.out.println(dig(2134));
     }
     static int dig(int n){
         if(n==0)
