@@ -12,5 +12,4 @@ public class Factorial {
 }
 /*
 F(N)=n*F(n-1)
-
  */

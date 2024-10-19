@@ -1,3 +1,6 @@
+/*
+Program to print the sum of first n integers from 1 to n.
+ */
 public class SumOfNnumbers {
     public static void main(String[] args) {
             int n=5;
@@ -10,3 +13,7 @@ public class SumOfNnumbers {
         return n+sum(n-1);
     }
 }
+/*
+->Base Condition: n=1
+->F(n)=n+F(n-1) is the Recursive Relation
+ */
