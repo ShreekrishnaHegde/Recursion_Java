@@ -1,3 +1,6 @@
+/*
+Program to find whether given integer is palindrome or not.
+ */
 public class Palindrome {
     public static void main(String[] args) {
         System.out.println(palindrome(1));
@@ -17,3 +20,7 @@ public class Palindrome {
         return (n%10)*(int)(Math.pow(10,digits-1))+flag(n/10,digits-1);
     }
 }
+/*
+->This program is similar to reversing an integer using recursion.
+->If reversed number is same as the original number then it is integer.
+ */

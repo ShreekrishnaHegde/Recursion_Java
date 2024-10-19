@@ -1,3 +1,6 @@
+/*
+program to find the factorial of a given number using recursion.
+ */
 public class Factorial {
     public static void main(String[] args) {
         //finding factorial of a number.
@@ -11,5 +14,8 @@ public class Factorial {
     }
 }
 /*
-F(N)=n*F(n-1)
+-> F(N)=n*F(n-1)
+->Non tail recursive function
+->Base Condition: n=0
+->F(N)= n*F(N-1)
  */

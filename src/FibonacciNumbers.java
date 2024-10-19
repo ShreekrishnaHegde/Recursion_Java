@@ -1,3 +1,6 @@
+/*
+Program to print Fib numbers using recursion.
+ */
 public class FibonacciNumbers {
     /*
     finding nth fib number using recursion.
@@ -20,4 +23,5 @@ public class FibonacciNumbers {
 ->Base condition: F(0)=0, F(1)=1.
 ->n if n == 0, n == 1;
     fib(n) = fib(n-1) + fib(n-2) otherwise;
+->Non-tail recursive function.
  */

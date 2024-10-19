@@ -31,4 +31,9 @@ NOTE:int digits=(int)(Math.log10(n))+1; gives total number of digits in a number
 ->Tail Recursive Function
 ->Base Condition: n=0
 ->Recursive Relation: F(N)=F(N/10)
+
+--------reverse2-----------
+Base Condition: n%10=n
+->Recursive Relation:
+->Non tail recursive function
  */
