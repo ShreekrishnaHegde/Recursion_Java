@@ -1,3 +1,5 @@
+package Basics;
+
 /*
 Program to find whether given integer is palindrome or not.
  */

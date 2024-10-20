@@ -1,3 +1,5 @@
+package Basics;
+
 /*
 Programs to print Numbers from 1 to n and n to 1.
  */

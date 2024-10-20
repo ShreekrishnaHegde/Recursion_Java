@@ -1,3 +1,5 @@
+package Basics;
+
 /*
 Program to print the sum of first n integers from 1 to n.
  */

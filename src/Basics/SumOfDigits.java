@@ -1,3 +1,5 @@
+package Basics;
+
 /*
 Program to print the sum of digits and product of the digits  of a given number.
  */
