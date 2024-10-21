@@ -19,4 +19,3 @@ public class SpecialConcept {
         return list;
     }
 }
-
