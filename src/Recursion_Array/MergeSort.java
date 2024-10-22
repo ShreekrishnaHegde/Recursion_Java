@@ -42,3 +42,9 @@ public class MergeSort {
         return mix;
     }
 }
+/*
+->At every level n elements are being merged.
+->Time complexity: O(N*log(N))
+->Space Complexity: O(N)
+->Recusrive Relatiob: T(N)=T(N/2)+T(N/2)+N-1
+ */
