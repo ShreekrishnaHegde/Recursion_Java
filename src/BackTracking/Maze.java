@@ -45,3 +45,7 @@ public class Maze {
         return list;
     }
 }
+/*
+->Need for collection framework in java.
+
+ */

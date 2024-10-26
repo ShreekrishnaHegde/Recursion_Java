@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Maze_Diagonal {
     public static void main(String[] args) {
         System.out.println(pathReturnDiagonal("",3,3));
+        
     }
     static ArrayList<String> pathReturnDiagonal(String p, int r, int c){
         if(r==1 && c==1){
