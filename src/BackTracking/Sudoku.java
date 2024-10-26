@@ -12,11 +12,11 @@ public class Sudoku {
                 {0, 0, 0, 0, 0, 0, 0, 7, 4},
                 {0, 0, 5, 2, 0, 6, 3, 0, 0}
         };
-        if (solve(board)) {
+        if (solve(board))
             display(board);
-        } else {
+        else
             System.out.println("Cannot solve");
-        }
+
     }
     static boolean solve(int[][] board){
         int n=board.length;
@@ -35,7 +35,7 @@ public class Sudoku {
             if(!emptyLeft)
                 break;
         }
-        if(emptyLeft==true)
+        if(emptyLeft)
             return true;
         for (int number=1;number<=9;number++){
             if(isSafe(board,row,col,number)) {
@@ -57,7 +57,7 @@ public class Sudoku {
     private static void display(int[][] board) {
         for(int[] row:board){
             for(int num:row){
-                System.out.println(num+" ");
+                System.out.print(num+" ");
             }
             System.out.println();
         }
@@ -79,7 +79,7 @@ public class Sudoku {
         int rowStart=row-row%sqrt;
         int colStart=col-col%sqrt;
         for (int r = rowStart; r < rowStart+sqrt; r++) {
-            for (int c = 0; c < colStart+sqrt; c++) {
+            for (int c = colStart; c < colStart+sqrt; c++) {
                 if(board[r][c]==num)
                     return false;
             }
