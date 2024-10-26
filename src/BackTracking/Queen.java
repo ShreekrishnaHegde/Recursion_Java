@@ -60,3 +60,7 @@ public class Queen {
     }
 }
 
+/*
+T(N)= N*T(N-1) +O(n^2)
+do this with only recurion
+ */
