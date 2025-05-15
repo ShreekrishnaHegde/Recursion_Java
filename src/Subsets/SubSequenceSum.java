@@ -10,6 +10,7 @@ public class SubSequenceSum {
         System.out.println();
         sum2(0,0,new ArrayList<>(),3,arr);
         System.out.println(sum3(0,0,3,arr));
+
     }
     public static void sum(int index,int sum,ArrayList<Integer> list,int K,int[] arr){
         if(index>=arr.length){

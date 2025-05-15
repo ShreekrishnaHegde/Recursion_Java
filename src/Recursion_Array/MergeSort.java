@@ -1,11 +1,45 @@
 package Recursion_Array;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr={5,4,3,2,1};
         System.out.println(Arrays.toString(mergeSort(arr)));
+        mergerSort(0,arr.length-1,arr);
+        System.out.println(Arrays.toString(arr));
+    }
+    static void mergerSort(int low,int high,int arr[]){
+        if(low>=high)
+            return;
+        int mid=low+(high-low)/2;
+        mergerSort(low,mid,arr);
+        mergerSort(mid+1,high,arr);
+        merge(low,mid,high,arr);
+    }
+    static void merge(int low,int mid,int high,int[] arr){
+        int left=low;
+        int right=mid+1;
+        ArrayList<Integer> list=new ArrayList<>();
+        while(left<=mid && right<=high){
+             if(arr[left]<=arr[right]){
+                 list.add(arr[left++]);
+             }
+             else{
+                 list.add(arr[right++]);
+             }
+        }
+        while(left<=mid){
+            list.add(arr[left++]);
+        }
+        while(right<=high){
+            list.add(arr[right++]);
+        }
+        for(int i=low;i<=high;i++){
+            arr[i]=list.get(i-low);
+        }
     }
     static int[] mergeSort(int[] arr){
         if(arr.length==1)
