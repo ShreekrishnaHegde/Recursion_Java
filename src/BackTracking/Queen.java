@@ -28,7 +28,7 @@ public class Queen {
     private static boolean isSafe(boolean[][] board,int row,int col){
         //Check for vertical row
         for (int i = 0; i < row; i++) {
-            if(board[row][col])
+            if(board[i][col])
                 return false;
         }
         //diagonal left
@@ -40,7 +40,7 @@ public class Queen {
 
         int maxRight=Math.min(row, board.length -col-1);
         for (int i=1;i<=maxRight;i++){
-            if (board[row-i][col+1])
+            if (board[row-i][col+i])
                 return false;
         }
         return true;
@@ -50,10 +50,7 @@ public class Queen {
     private static void display(boolean[][] board){
         for(boolean[] row: board){
             for (boolean element: row){
-                if(element==true)
-                    System.out.print("Q");
-                else
-                    System.out.print("X");
+                System.out.print(element?"Q ":"X ");
             }
             System.out.println();
         }
@@ -62,5 +59,11 @@ public class Queen {
 
 /*
 T(N)= N*T(N-1) +O(n^2)
-do this with only recurion
+do this with only recursion
+
+Rules:
+1)Every row should a queen
+2)Every Col Should have a queen
+3)none of the queens should attack each other
+Queen can attack in all 8 direction
  */

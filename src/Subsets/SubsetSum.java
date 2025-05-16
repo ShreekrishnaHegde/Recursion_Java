@@ -15,7 +15,7 @@ public class SubsetSum {
         ArrayList<Integer> sumSubset=new ArrayList<>();
         fun(0,0,arr,N,sumSubset);
         Collections.sort(sumSubset);
-
+        return sumSubset;
     }
     static void fun(int index,int sum,ArrayList<Integer> arr,int N,ArrayList<Integer> subSet){
         if(index==N){
